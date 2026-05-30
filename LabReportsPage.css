@@ -1,0 +1,504 @@
+:root{
+  --soft-secret:#D6D4C9;
+  --wet-pavement:#9D9F97;
+  --blue-prince:#697F93;
+  --stratosphere:#415365;
+  --black-pearl:#1E262F;
+  --white:#ffffff;
+  --input-bg:#F2F3F0;
+  --border:#DDE0DB;
+  --text-muted:#7A8490;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#f5f7fb;
+}
+
+/* ========================= */
+/* LOGIN PAGE */
+/* ========================= */
+
+.main-container{
+  min-height:100vh;
+}
+
+.login-container{
+  min-height:100vh;
+  display:flex;
+}
+
+.login-left{
+  width:45%;
+  background:linear-gradient(
+    145deg,
+    var(--black-pearl),
+    var(--stratosphere),
+    var(--blue-prince)
+  );
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  position:relative;
+}
+
+.left-content{
+  z-index:2;
+  text-align:center;
+}
+
+.left-content h1{
+  font-size:52px;
+  margin-bottom:15px;
+}
+
+.left-content p{
+  font-size:18px;
+  color:var(--soft-secret);
+}
+
+.login-right{
+  flex:1;
+  background:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:70px;
+}
+
+.login-right h1{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:var(--text-muted);
+  margin-bottom:30px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.input-group input{
+  padding:15px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--input-bg);
+  font-size:15px;
+}
+
+.input-group button{
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(
+    135deg,
+    var(--stratosphere),
+    var(--black-pearl)
+  );
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.demo-users{
+  margin-top:35px;
+  background:#f4f6f9;
+  padding:20px;
+  border-radius:12px;
+}
+
+.demo-users h4{
+  margin-bottom:12px;
+}
+
+.demo-users p{
+  margin-bottom:8px;
+  color:#555;
+}
+
+/* ========================= */
+/* LAB REPORT */
+/* ========================= */
+
+.lab-container{
+  padding:40px;
+  max-width:1200px;
+  margin:auto;
+}
+
+#report-pdf{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.report-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:30px;
+  border-bottom:2px solid #e5e7eb;
+  padding-bottom:20px;
+}
+
+.hospital-name{
+  font-size:34px;
+  color:#0f172a;
+  margin-bottom:8px;
+}
+
+.hospital-sub{
+  color:#64748b;
+  font-size:15px;
+}
+
+.report-info p{
+  margin-bottom:8px;
+  color:#334155;
+  font-size:14px;
+}
+
+.report-title-box{
+  background:#1e293b;
+  color:white;
+  padding:18px;
+  border-radius:14px;
+  margin-bottom:30px;
+}
+
+.report-title-box h2{
+  font-size:28px;
+}
+
+.patient-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+  margin-bottom:35px;
+}
+
+.patient-card{
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+  border-radius:16px;
+  padding:24px;
+}
+
+.patient-card h3{
+  margin-bottom:18px;
+  color:#0f172a;
+}
+
+.patient-card p{
+  margin-bottom:12px;
+  color:#334155;
+  font-size:15px;
+}
+
+.table-wrapper{
+  overflow-x:auto;
+}
+
+.lab-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:35px;
+}
+
+.lab-table th{
+  background:#1e293b;
+  color:white;
+  padding:18px;
+  font-size:15px;
+}
+
+.lab-table td{
+  padding:18px;
+  border-bottom:1px solid #e5e7eb;
+  font-size:15px;
+  text-align:center;
+}
+
+.lab-table tr:hover{
+  background:#f8fafc;
+}
+
+.report-summary{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  margin-top:20px;
+}
+
+.summary-card{
+  background:#f8fafc;
+  border-radius:16px;
+  padding:24px;
+  border:1px solid #e2e8f0;
+}
+
+.summary-card h3{
+  margin-bottom:15px;
+  color:#0f172a;
+}
+
+.signature-section{
+  display:flex;
+  justify-content:space-between;
+  margin-top:70px;
+}
+
+.signature-line{
+  width:220px;
+  border-top:2px solid #334155;
+  margin-bottom:10px;
+}
+
+/* ========================= */
+/* ACTIONS */
+/* ========================= */
+
+.report-actions{
+  margin-top:30px;
+  text-align:right;
+}
+
+.report-actions button{
+  padding:14px 24px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(
+    135deg,
+    var(--stratosphere),
+    var(--black-pearl)
+  );
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* ========================= */
+/* BLOCKCHAIN */
+/* ========================= */
+
+.blockchain-section{
+  margin-top:40px;
+}
+
+.blockchain-box{
+  background:white;
+  padding:24px;
+  border-radius:16px;
+  margin-top:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.blockchain-box small{
+  word-break:break-all;
+  color:#475569;
+}
+
+.verify-btn{
+  margin-top:20px;
+  padding:14px 24px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(
+    135deg,
+    var(--blue-prince),
+    var(--black-pearl)
+  );
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* ========================= */
+/* PRINT */
+/* ========================= */
+
+@media print{
+
+  body{
+    background:white;
+  }
+
+  .no-print{
+    display:none !important;
+  }
+
+  .main-container{
+    background:white;
+    padding:0;
+  }
+
+  .lab-container{
+    width:100%;
+    padding:0;
+    box-shadow:none;
+  }
+
+  #report-pdf{
+    box-shadow:none;
+    border:none;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:900px){
+
+  .login-container{
+    flex-direction:column;
+  }
+
+  .login-left{
+    width:100%;
+    min-height:300px;
+  }
+
+  .login-right{
+    padding:40px;
+  }
+
+  .report-top{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .signature-section{
+    flex-direction:column;
+    gap:40px;
+  }
+}
+/* MAIN BACKGROUND */
+
+.main-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #334155
+  );
+
+  padding: 30px;
+}
+
+/* LOGIN CONTAINER */
+
+.login-container {
+  width: 850px;
+  min-height: 500px;
+
+  display: flex;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow: 0 15px 40px
+    rgba(0, 0, 0, 0.3);
+}
+
+/* LEFT SIDE */
+
+.login-left {
+  flex: 1;
+
+  position: relative;
+
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/069/629/568/small/laboratory-flasks-science-and-research-equipment-free-photo.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(15, 23, 42, 0.7);
+}
+
+/* LEFT CONTENT */
+
+.left-content {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  color: white;
+
+  padding: 30px;
+}
+
+.left-content h1 {
+  font-size: 48px;
+
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+/* RIGHT SIDE */
+
+.login-right {
+  flex: 1;
+
+  background: #e2e8f0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.login-right h1 {
+  font-size: 42px;
+
+  color: #0f172a;
+
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #475569;
+
+  margin-bottom: 30px;
+}
